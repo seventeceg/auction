@@ -15,7 +15,7 @@ import os
 
 import dj_database_url
 
-HOST_IP = '46.101.75.194'
+HOST_IP = 'ec2-54-221-244-196.compute-1.amazonaws.com'
 LOCAL_HOST = 'localhost'
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -103,9 +103,9 @@ def get_host():
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'bidding_service',
-        'USER': 'postgres',
-        'PASSWORD': 'postgres',
+        'NAME': 'dbh24g55rp1fnm',
+        'USER': 'dxihwdoddxugua',
+        'PASSWORD': 'e9aa71e38912068f77d139572e0f78b2d8d37718b3034fb66752dbc8a254c2e9',
         'HOST': get_host(),
         'PORT': '5432',
         'CONN_MAX_AGE': 100,
